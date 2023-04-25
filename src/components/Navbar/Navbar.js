@@ -3,10 +3,12 @@ import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const navigate = useNavigate();
+
   const handleClick = () => {
     localStorage.removeItem("userAuth");
     navigate("/login");
   };
+
   const loginUser = localStorage.getItem("userAuth");
 
   return (

@@ -20,7 +20,6 @@ const Product = () => {
     retry: false,
   });
 
-  console.log(data);
   if (isLoading) return "Loading...";
   if (error)
     return (

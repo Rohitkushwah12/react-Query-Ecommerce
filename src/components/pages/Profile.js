@@ -20,7 +20,6 @@ const Profile = () => {
     retry: false,
   });
 
-  console.log(data);
   if (isLoading) return "Loading...";
   if (error)
     return (
@@ -39,7 +38,6 @@ const Profile = () => {
         {` ${data.firstName}
         ${data.lastName}`}
       </h1>
-      
     </div>
   );
 };
